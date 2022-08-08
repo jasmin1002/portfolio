@@ -1,0 +1,66 @@
+.login {
+    /* background-color: black; */
+}
+
+.login {
+    width: 51rem;
+    border: var(--border-line-grey);
+    margin: 0 auto;
+    margin-top: 8rem;
+    padding: 3rem 2rem;
+    border-radius: .8rem;
+  }
+
+  .login-heading {
+    margin-bottom: 4rem;
+    color: #555;
+    text-align: center;
+  }
+
+  .form {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif
+  }
+
+  .form-vgroup {
+    display: flex;
+    flex-direction:column;
+  }
+
+  .form-vgroup:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  
+  .form-vgroup:last-of-type {
+    margin-top: 5rem;
+  }
+
+  label {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: var(--color-dark-light);
+  }
+
+  .input {
+    border: var(--border-line-grey);
+    padding: 1rem 7px;
+    border-radius: 4px;
+    color: var(--color-dark-light);
+    outline: none;
+  }
+
+  .input:focus {
+    border: var(--border-line-dark);
+  }
+  
+  .input::placeholder {
+    color: var(--color-dark-vlight);
+  }
+
+  button {
+    border: none;
+    padding: 1rem 5px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+  }

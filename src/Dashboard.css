@@ -1,0 +1,89 @@
+.dashboard {
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    border: var(--border-line-grey);
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+}
+
+/*****************************************
+        Left-Pane Section
+*****************************************/
+
+.pane {
+    /* max-height: 100%; */
+    padding: 3.4rem 1.8rem;
+    border-left: 1px solid var(--color-grey-light);
+    border-right: 1px solid var(--color-grey-light);
+    background-color: var(--color-off-white);
+    position: fixed;
+    /* margin-right: 5rem;    */
+}
+
+.pane-header {
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--color-grey-light);
+    margin-bottom: 2.6rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85%;
+}
+
+.navigation-items {
+    list-style: none;
+    /* outline: 1px solid orangered; */
+    margin-bottom: auto;
+}
+
+.navigation-item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.navigation-item {
+    border-radius: 8px;
+}
+
+.navigation-item:first-of-type {
+    background-color: var(--color-grey-light);
+}
+
+.navigation-item:hover {
+    background-color: var(--color-grey-light);
+}
+
+.navigation-link:link,
+.navigation-link:visited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    color: var(--color-dark-light);
+    text-decoration: none;
+    font-size: 2rem;
+    /* outline: 1px solid green; */
+}
+
+.aside {
+    /* outline: 1px solid blue; */
+}
+
+.icon-fanapster {
+    font-size: 3rem;
+}
+
+
+/****************************************
+        Content Sections
+****************************************/
+
+.content {
+    width: 100%;
+    background-color: var(--color-grey-dark);
+    margin-left: 7.4rem;
+}
