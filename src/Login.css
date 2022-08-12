@@ -17,12 +17,12 @@
     text-align: center;
   }
 
-  .form {
+  .login .form {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif
   }
 
-  .form-vgroup {
+  .login .form-vgroup {
     display: flex;
     flex-direction:column;
   }
@@ -35,14 +35,14 @@
     margin-top: 5rem;
   }
 
-  label {
+  .login label {
     margin-bottom: 8px;
     font-size: 1.5rem;
     letter-spacing: 1px;
     color: var(--color-dark-light);
   }
 
-  .input {
+  .login .input {
     border: var(--border-line-grey);
     padding: 1rem 7px;
     border-radius: 4px;
@@ -50,15 +50,15 @@
     outline: none;
   }
 
-  .input:focus {
+  .login .input:focus {
     border: var(--border-line-dark);
   }
   
-  .input::placeholder {
+  .login .input::placeholder {
     color: var(--color-dark-vlight);
   }
 
-  button {
+  .login button {
     border: none;
     padding: 1rem 5px;
     border-radius: 4px;

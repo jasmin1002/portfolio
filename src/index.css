@@ -11,12 +11,31 @@
         Color Palette
   ====================================*/
   --color-grey-light: #eee;
+  --color-grey-light-1: #e1e1e1;
   --color-grey-dark: #eeeff0;
+  --color-grey-extra-d: #c0bfbf;
   --color-dark-light: #333;
+  --color-dark-light-1: #444;
+  --color-dark-light-2: #555;
   --color-dark-vlight: #777;
 
-  --color-off-white: #fffffd
+  --color-off-white: #fffffd;
+  --color-off-white-1: #fdfdfd;
+  --color-white: #fff;
 
+  --color-red: rgb(255, 0, 0);
+  --color-dim-pink: #E71D36;
+  --faded-red: rgb(254, 185, 202);
+
+  --yellow: #EDD83D;
+  --faded-yellow: hsl(55, 100%, 86%);
+
+  --faded-green: hsl(210, 100%, 100%);
+  --light-green: rgb(0, 231, 22);
+
+  --faded-blue: hsl(207, 51%, 95%);
+  --light-blue: #5695C8;
+  /* 140, 100%, 85% */
 
 
   /*===================================
@@ -24,6 +43,7 @@
   ====================================*/
   --border-line-grey: 1px solid #eee;
   --border-line-dark: 1px solid #555;
+  --border-line-grey-d: 1px solid #c0bfbf;
 }
 
 html {
@@ -40,90 +60,51 @@ body {
   font-size: 1.6rem;
 }
 
+.row-grid {
+  display: grid;
+  /* (Initial Declaration) grid: min-content 1rem / repeat(12, 1fr); */
+  grid: min-content / repeat(12, 1fr);
+  column-gap: 2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .dashboard {
-  display: flex;
-
-  max-width: 120rem;
-  width: 100vw;
-  margin: 0 auto;
-  margin-top: 5rem;
-  /* outline: 1px solid red; 
-} */
-
-/* .aside {
-  width: 30%;
-  background-color: #333;
-} */
-
-/* .logo-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.heading-primary {
+  font-size: 3rem;
   margin-bottom: 2rem;
-  padding: 2rem 1rem;
-} */
+}
 
-/* .content {
-  width: 70%;
-  background-color: #f4f4f4;
-  padding: 2px 2px 0 0rem;
-} */
+.mb-2 {
+  margin-bottom: 2rem;
+}
 
-/* .header {
-  background-color: #fff;
-  padding: .6rem 1.5rem;
-  border-bottom: 2px solid #f4f4f4;
-  margin-bottom: 2px;
-  /* box-shadow: 1px 2px 10px #777; *
-} */
-
-/* .main {
-  background-color: #fefefe;
-  border-radius: 7px 7px 0;
-} */
-
-
-/* .user {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  /* box-shadow: 0 1px 8px #777; 
-} */
-
-/* .image-box {
-  width: 4.5rem;
-  height: 4.5rem;
+/****************************************
+    Content - Graph Custom Radio Btn
+****************************************/
+.radio-btn {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #9ed8db;
   border-radius: 50%;
-  margin-right: 1rem;
-  border: 1px solid #eee;
-} */
 
-/* .logo-box .logo {
-  color: #fff
-} */
+  position: absolute;
+  z-index: 1;
+  transform: translate(-94%, 18%);
+}
 
-/* .navigation {
-  display: flex;
-  flex-direction: column;
+/****************************************
+    Content - Btn
+****************************************/
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  border: var(--border-line-grey-d);
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-dark-light-2);
+}
 
-  list-style: none;
-} */
+.right-align {
+  margin-left: auto;
+}
