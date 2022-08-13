@@ -401,7 +401,7 @@
 }
 
 .option:checked + span.radio-btn {
-    background-color: #0075f2;
+    background-color: var(--blue);
 }
 
 .options label {
@@ -413,4 +413,115 @@
     background-color: #fff;
     border: 1px solid var(--faded-green);
     min-height: 20rem;
+    /* outline: 1px solid red; */
+}
+
+.chart-follower {
+    /* outline: 1px solid teal; */
+    min-height: 20rem;
+}
+
+
+/****************************************
+        Content - Aside Sections
+****************************************/
+.account-info {
+    background-color: var(--color-off-white-1);
+    padding: 1.5rem;
+    border-radius: 1.1rem;
+    border: var(--border-line-grey);
+}
+
+.account-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.account-profile {
+    /* width: 70%; */
+    /* margin: 0 auto; */
+}
+
+.account-moreinfo:link,
+.account-moreinfo:visited {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: .1rem .4rem;
+    border-radius: 55%;
+    background-color: var(--color-grey-light);
+}
+
+.icon-horizdot {
+    font-size: 2rem;
+    line-height: 2;
+    color: var(--color-dark-light-2);
+}
+
+.account-avatar {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 2.6px solid var(--color-grey-light);
+    border-right: 2.6px solid var(--blue);
+    padding: .3rem;
+    margin-bottom: .7rem;
+    overflow: hidden;
+    transform: rotate(30deg);
+}
+
+.account-photo {
+    display: inline-block;
+    width: 100%;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+}
+
+.account-username-id {
+    display: block;
+    margin-top: .25rem;
+    font-size: 1.2rem;
+    color: var(--color-grey-extra-d);
+    text-align: center;
+}
+
+/****************************************
+Content - Aside - Online-Presence Sections
+****************************************/
+.online-presence {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-grey-light);
+    list-style: none;
+    margin-top: 3.3rem;
+    padding: .9rem 1.2rem;
+    border-radius: .7rem;
+}
+
+.online-stat > * {
+    display: block;
+    text-align: center;
+}
+
+.online-stat-figure {
+    font-size: 1.75rem;
+    letter-spacing: .5px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.online-activity {
+    color: var(--color-dark-vlight);
+    font-size: 1.2rem;
+    font-weight: 500;
 }
