@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import SharedLayout from './pages/sharedLayout';
 import Login from './pages/login'
 import Dashboard from './pages/dashboard';
@@ -13,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/'  element={<SharedLayout />}>
           <Route index path='/' element={<Login />} />
+          <Route index path='login' element={<Navigate to={'/'} />} />
           <Route path='dashboard' element={<Dashboard />}/>
           <Route path='*' element={<Page404 />} />
         </Route>
