@@ -4,7 +4,7 @@ export default function Card(props) {
     return (
         <div className='card'>
             <div className='card-top'>
-                <h4 className='card-heading'>
+                <h4 className='card-heading secondary-heading'>
                     <span style={{backgroundColor: props.color}}className='icon-box'>
                         {props.icon}
                     </span>

@@ -33,6 +33,7 @@
   --faded-green: hsl(210, 100%, 100%);
   --light-green: rgb(0, 231, 22);
 
+  --blue: #0075f2;
   --faded-blue: hsl(207, 51%, 95%);
   --light-blue: #5695C8;
   /* 140, 100%, 85% */
@@ -70,6 +71,10 @@ body {
 .heading-primary {
   font-size: 3rem;
   margin-bottom: 2rem;
+}
+
+.heading-secondary {
+
 }
 
 .mb-2 {

@@ -6,6 +6,7 @@ export default function Content() {
     return (
         <section className='content'>
             <Header />
+            <h1 className='heading-primary'>Overview</h1>
             <Main />
         </section>
     )
