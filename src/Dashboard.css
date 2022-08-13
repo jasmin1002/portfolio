@@ -73,10 +73,6 @@
     /* outline: 1px solid green; */
 }
 
-.aside {
-    /* outline: 1px solid blue; */
-}
-
 .icon-fanapster {
     font-size: 3rem;
 }
@@ -425,9 +421,13 @@
 /****************************************
         Content - Aside Sections
 ****************************************/
-.account-info {
+.content-aside > *:not(:last-child) {
+    margin-bottom: 1.2rem;
+}
+
+.account-info, .ads {
     background-color: var(--color-off-white-1);
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 1.8rem;
     border-radius: 1.1rem;
     border: var(--border-line-grey);
 }
@@ -435,7 +435,7 @@
 .account-top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .account-body {
@@ -443,18 +443,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
-}
-
-.account-profile {
-    /* width: 70%; */
-    /* margin: 0 auto; */
 }
 
 .account-moreinfo:link,
 .account-moreinfo:visited {
     display: flex;
     align-items: center;
+    align-self: flex-start;
     text-decoration: none;
     padding: .1rem .4rem;
     border-radius: 55%;
@@ -520,8 +515,50 @@ Content - Aside - Online-Presence Sections
     margin-bottom: 2px;
 }
 
-.online-activity {
+.online-activity,
+.event-date {
     color: var(--color-dark-vlight);
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+/****************************************
+Content - Aside - Advert Sections
+****************************************/
+.ads-banner {
+    height: 13rem;
+    overflow: hidden;
+    border-radius: .7rem;
+}
+
+.ads-photo {
+    display: inline-block;
+    width: 100%;
+    margin-top: -65%;
+
+}
+
+.host {
+    display: flex;
+}
+
+.host > *:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.host > *:last-child {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+.host-avatar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.host-photo {
+    width: 100%;
 }

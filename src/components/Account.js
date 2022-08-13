@@ -5,14 +5,14 @@ import user from '../img/user.jpg'
 
 export const Account = () => (
     <section className='account-info'>
-        <div className='account-top'>
-            <h4 className='secondary-heading'>
+        <header className='account-top'>
+            <h4 className='secondary-heading mb-4'>
                 Account
             </h4>
             <a href='.' className='account-moreinfo'>
                 <MdMoreHoriz className='icon-horizdot'/>
             </a>
-        </div>
+        </header>
         <div className='account-body'>
             <div className='account-profile'>
                 <figure className='account-avatar'>

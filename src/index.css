@@ -73,12 +73,28 @@ body {
   margin-bottom: 2rem;
 }
 
-.heading-secondary {
+.secondary-heading {
+  
+}
 
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-1_5 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-2 {
   margin-bottom: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
 }
 
 /****************************************
@@ -102,11 +118,33 @@ body {
 .btn:link,
 .btn:visited {
   text-decoration: none;
-  border: var(--border-line-grey-d);
   padding: .5rem 1rem;
   border-radius: 5px;
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+.btn__outline {
+  border: var(--border-line-grey-d);
+}
+
+.btn__fill {
+  display: inline-block;
+  width: 100%;
+  background-color: var(--blue);
+  text-align: center;
+}
+
+
+.btn__blue {
+  background-color: var(--blue);
+}
+
+.btn-text_white {
+  color: #fff;
+}
+
+.btn-text_grey {
   color: var(--color-dark-light-2);
 }
 

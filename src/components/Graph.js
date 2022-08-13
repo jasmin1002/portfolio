@@ -79,7 +79,7 @@ export default function Graph() {
                         </label>
                     </div>
                 </form>
-                <Link to='.' className='btn right-align'>Learn More</Link>
+                <Link to='.' className='btn btn__outline right-align'>Learn More</Link>
             </div>
             <div className='graph'>
                 { 

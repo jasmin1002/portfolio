@@ -2,6 +2,7 @@ import React from 'react'
 import Card from './Card'
 import Graph from './Graph'
 import {Account} from './Account'
+import {Ads} from './Ads'
 
 import {FcLike, FcConferenceCall,} from 'react-icons/fc'
 import {FaCaretUp, FaCaretDown, FaRegBell} from 'react-icons/fa'
@@ -43,9 +44,7 @@ export default function Main() {
             </main>
             <aside className='content-aside'>
                 <Account />
-                <section className='ads'>
-                    &nbsp;
-                </section>
+                <Ads />
             </aside>
         </section>
     )
