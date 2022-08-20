@@ -1,0 +1,16 @@
+.upload {
+    grid-column: span 8;
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 1.1rem;
+}
+
+.product {
+    grid-column: span 8;
+    /* outline: 1px solid tomato; */
+}
+
+.engagement {
+    grid-column: span 4;
+    /* outline: 1px solid teal; */
+}

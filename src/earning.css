@@ -1,0 +1,6 @@
+.earning {
+    grid-column: span 4;
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 1.1rem;
+}
